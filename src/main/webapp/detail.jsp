@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/menu.css" />
 <style type="text/css">
 #main {
-	width: 1060px;
+	width: 1200px;
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
@@ -35,7 +35,7 @@
 }
 
 #content {
-	width: 1060px;
+	width: 1200px;
 	min-height: 430px;
 	border: 1px solid #CDCDCD;
 	float: left;
@@ -67,7 +67,7 @@
 	%>
 	<div id="main">
 		<div id="head">
-			<img src="images/banner.jpg" width="1057px" height="200px" />
+			<img src="images/bgr1.jpg" width="1200px" height="200px" />
 		</div>
 		<%
 		
@@ -86,7 +86,7 @@
 			if (username != null) {
 		%>
 		<div id="head-link">
-			<div id='menungang'>
+			<div id='menungang'style="background-color:  #0093E9; background-image:linear-gradient(160deg, #0081cc 10%, #80D0C7 100%);width: 1200px;">
 				<ul>
 					<li class='last'><a href="index.jsp"><span>Trang
 								chủ</span></a></li>
@@ -103,7 +103,7 @@
 			} else {
 		%>
 		<div id="head-link">
-			<div id='menungang'>
+			<div id='menungang'style="background-color:  #0093E9; background-image:linear-gradient(160deg, #0081cc 10%, #80D0C7 100%);width: 1200px;">
 				<ul>
 					<li class='last'><a href="index.jsp"><span>Trang
 								chủ</span></a></li>

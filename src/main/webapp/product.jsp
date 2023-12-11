@@ -110,10 +110,13 @@
 					</ul>
 				</div>
 
-			<div id="footer" align= "center">
+			
 				
 			</div>
+			<div id="footer"><jsp:include page="footer.jsp"></jsp:include></div>
+	
 		</div>
+			
 	
 </body>
 </html>

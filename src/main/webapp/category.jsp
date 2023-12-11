@@ -17,7 +17,7 @@
 		List<Category> list = new ArrayList<Category>();
 		list = categoryDAO.getList();
 	%>
-	<div class="container" style = "background-color:azure ;width: 250px;height: 450px">
+	<div class="container" >
 		<nav>
 		<ul class="mcd-menu">
 			<%

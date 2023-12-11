@@ -71,8 +71,8 @@
 			}
 		%>
 		<div id="content">
-			<div id="left" style = "width = 150px"><jsp:include page="category.jsp"></jsp:include></div>
-			<div id="right" style = "margin-top: -332px ">
+			<jsp:include page="category.jsp"></jsp:include>
+			<div id="right" style = "margin-top: -265px ">
 				<%
 					ProductDAOImpl productDAO = new ProductDAOImpl();
 						List<Product> list = new ArrayList<Product>();
@@ -84,7 +84,7 @@
 						NumberFormat nf = NumberFormat.getInstance();
 						nf.setMinimumFractionDigits(0);
 				%>
-				<div id="site-wrapper" style="float: left; margin-right: 100px; width: 900px">
+				<div id="site-wrapper" style="float: left; margin-right: 250px; width: 900px">
 					<ul class="products homepage">
 						<%
 							if (ma_the_loai != null) {
