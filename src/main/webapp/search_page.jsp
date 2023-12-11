@@ -70,8 +70,8 @@
 		<%
 			}
 		%>
-		<div id="content" style = "background-color: azure">
-			<jsp:include page="search_menu.jsp"></jsp:include>
+		<div id="content" style = "background-color: azure; width: 1200px" >
+			<div style="margin-left: 10px ; margin-top : 10px ; border: 1px solid ; width: 205px"><jsp:include page="search_menu.jsp"></jsp:include></div>
 			 
 				<%
 				
@@ -96,7 +96,7 @@
 				<%if(productDAO.searchList(ten_san_pham, ten_the_loai).size()==0 && err=="") {%>
 					<h3>Không tìm thấy sản phẩm nào phù hợp</h3>
 					<%} %>
-				<div id="site-wrapper" style="float: left ;margin-left: 300px; margin-top: -159px; width: 900px">
+				<div id="site-wrapper" style="float: left ;margin-left: 230px; width: 950px; margin-top: -140px ">
 					<ul class="products homepage">
 					
 						<%

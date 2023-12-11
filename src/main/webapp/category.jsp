@@ -19,7 +19,7 @@
 	%>
 	<div class="container" >
 		<nav>
-		<ul class="mcd-menu">
+		<ul class="mcd-menu" style = "background: rgb(140, 238, 233)">
 			<%
 				for (Category c : list) {
 					
