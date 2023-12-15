@@ -71,7 +71,7 @@
 			}
 		%>
 		<div id="content" style = "background-color: azure; width: 1200px" >
-			<div style="margin-left: 10px ; margin-top : 10px ; border: 1px solid ; width: 205px"><jsp:include page="search_menu.jsp"></jsp:include></div>
+			<div style="margin-left: 10px ; margin-top : 10px; width: 200px; border-radius: 10px"><jsp:include page="search_menu.jsp"></jsp:include></div>
 			 
 				<%
 				
