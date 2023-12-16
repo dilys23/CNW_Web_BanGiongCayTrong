@@ -10,13 +10,16 @@
 <link rel="stylesheet" href="css/detail.css" />
 <link rel="stylesheet" href="css/menu.css" />
 <style type="text/css">
+body {
+	font-family: Arial, Tahoma;
+	font-size: 12px;
+	background-color: #1AA59A;}
 #main {
-	width: 1200px;
-	padding: 0;
-	margin-left: auto;
-	margin-right: auto;
+	 width: 100%;
+    max-width: 1200px; /* Adjust max-width according to your design */
+    margin: 0 auto; /* Center the content */
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
-
 #head {
 	height: 200px;
 	background-color: #F5F5F5;
@@ -36,19 +39,21 @@
 
 #content {
 	width: 1200px;
-	min-height: 430px;
+	min-height: 550px;
 	border: 1px solid #CDCDCD;
 	float: left;
 	margin-bottom: 5px;
 	clear: both;
+	background-color: azure;
 }
+
 
 #footer {
 	height: 50px;
 	clear: both;
 	border: 1px solid #CDCDCD;
 	background-color: #F8F8FF;
-	margin-bottom: 5px;
+	margin-top: 440px;
 }
 </style>
 </head>
@@ -67,7 +72,7 @@
 	%>
 	<div id="main">
 		<div id="head">
-			<img src="images/bgr1.jpg" width="1200px" height="200px" />
+				<img src="images/bgr1.png" width="1200px" height="200px" />
 		</div>
 		<%
 		
@@ -131,7 +136,7 @@
 				<table>
 					<tr class="row1">
 						<td class="col2" colspan="2"
-							style="padding: 10px; color: blue; font-size: 15px; text-transform: uppercase; text-align: center; font-weight: bold"><%=productDAO.getProduct(Integer.parseInt(ma_san_pham))
+							style="padding: 10px; color: white; background-color: #1AA59A; font-size: 15px; text-transform: uppercase; text-align: center; font-weight: bold"><%=productDAO.getProduct(Integer.parseInt(ma_san_pham))
 					.getTen_san_pham()%></td>
 					</tr>
 					<tr class="row2">
@@ -150,7 +155,7 @@
 			</div>
 			<% if(username != null) { %>
 			<div
-				style="margin-left: auto; margin-right: auto; text-align: center; margin-top: 10px; padding: 10px; clear: both;">
+				style="margin-left: 400px;  text-align: center; margin-top: 10px; padding: 10px; clear: both;">
 				<a
 					href="#"><img
 					src="images/giohang.png" /></a>
@@ -163,7 +168,7 @@
 			</div>
 			<%} else { %>
 			<div
-				style="margin-left: auto; margin-right: auto; text-align: center; margin-top: 10px; padding: 10px; clear: both;">
+				style="margin-left: 200px; text-align: center; margin-top: -50px; ">
 				<a
 					href="login.jsp"><img
 					src="images/giohang.png" /></a>
@@ -172,13 +177,13 @@
 			<div class="left-3">
 				<article> <input type="checkbox" id="read_more"
 					role="button"> <label for="read_more" onclick=""
-					style="width: 770px; margin-left: 150px; margin-right: auto;"><span>Xem
+					style="width: 300px; margin-left: 640px;background-color: #1AA59A;"><span>Xem
 						thông tin chi tiết</span> <span>Đóng</span></label> <section>
-				<table>
+				<table style="margin-left:600px; margin-top: 30px;">
 
 					<!-- thong tin chung -->
-					<tr rowspan="2">
-						<td class="detail-1">Thông chi tiết</td>
+					<tr rowspan="2"  ">
+						<td class="detail-1" > Thông chi tiết</td>
 						<td class="detail-2">Đang cập nhật</td>
 					</tr>
 
