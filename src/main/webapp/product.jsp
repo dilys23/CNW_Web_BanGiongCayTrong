@@ -18,7 +18,7 @@
 <body>
 		<div id="main">
 			<div id="head">
-				<img src="images/bgr1.jpg" width="1200px" height="200px" />
+				<img src="images/bgr1.png" width="1200px" height="200px" />
 			</div>
 		<%
 			String username = null;
@@ -95,7 +95,7 @@
 										Giá:
 										<%=nf.format(p.getGia_ban())%>
 										VNĐ
-									</h4> <span class="textkm">Khuyến mãi trị giá đến <strong>500.000₫</strong>
+									</h4> <span class="textkm">
 								</span>
 									<p class="info">
 										<span>Hãng sx: <%=p.getHang_san_xuat()%></span> <span>Giá:

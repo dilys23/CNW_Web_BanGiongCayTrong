@@ -18,7 +18,7 @@
 
 	<div id="main" style="background-color: #FFDEE9; background-image: linear-gradient(0deg, #fbe9ef 0%, #9dfffa 69%, #a6f7ff 100%);" >
 		<div id="head">
-			<img src="images/bgr1.jpg" width="1200px" height="200px" />
+			<img src="images/bgr1.png" width="1200px" height="200px" />
 		</div>
 
 		<%
@@ -100,7 +100,7 @@
 									Giá:
 									<%=nf.format(p.getGia_ban())%>
 									VNĐ
-								</h4> <span class="textkm">Khuyến mãi trị giá đến <strong>500.000₫</strong>
+								</h4> <span class="textkm">
 							</span>
 								<p class="info">
 									<span>Hãng sx: <%=p.getHang_san_xuat()%>
@@ -123,7 +123,7 @@
 									Giá:
 									<%=nf.format(p.getGia_ban())%>
 									VNĐ
-								</h4> <span class="textkm">Khuyến mãi trị giá đến <strong>500.000₫</strong>
+								</h4> <span class="textkm">
 							</span>
 								<p class="info">
 									<span>Hãng sx: <%=p.getHang_san_xuat()%></span> <span>Giá:

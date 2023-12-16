@@ -16,13 +16,16 @@
 <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <style type="text/css">
+body {
+	font-family: Arial, Tahoma;
+	font-size: 12px;
+	background-color: #1AA59A;}
 #main {
-	width: 1200px;
-	padding: 0;
-	margin-left: auto;
-	margin-right: auto;
+	 width: 100%;
+    max-width: 1200px; /* Adjust max-width according to your design */
+    margin: 0 auto; /* Center the content */
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
-
 #head {
 	height: 200px;
 	background-color: #F5F5F5;
@@ -47,6 +50,7 @@
 	float: left;
 	margin-bottom: 5px;
 	clear: both;
+	background-color: azure;  	
 }
 
 #footer {
@@ -73,7 +77,7 @@
 	%>
 	<div id="main">
 		<div id="head">
-			<img src="images/bgr1.jpg" width="1200px" height="200px" />
+			<img src="images/bgr1.png" width="1200px" height="200px" />
 		</div>
 		<div id="head-link">
 			<div id='menungang'  style="background-color:  #0093E9; background-image:linear-gradient(160deg, #0081cc 10%, #80D0C7 100%);width: 1200px;">
@@ -92,9 +96,9 @@
 		<div id="content">
 			
 
-			<div class="shopping-cart">
+			<div class="shopping-cart" style = "font-size: 1.5rem; color : black">
 
-				<div class="column-labels">
+				<div class="column-labels" style = "font-size: 1.5rem; color : black">
 					<label class="product-image">Hình ảnh</label> <label
 						class="product-details">Product</label> <label
 						class="product-price">Giá bán</label> <label

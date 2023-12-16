@@ -16,11 +16,15 @@
 <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <style type="text/css">
+body {
+	font-family: Arial, Tahoma;
+	font-size: 12px;
+	background-color: #1AA59A;}
 #main {
-	width: 1060px;
-	padding: 0;
-	margin-left: auto;
-	margin-right: auto;
+	 width: 100%;
+    max-width: 1200px; /* Adjust max-width according to your design */
+    margin: 0 auto; /* Center the content */
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 #head {
@@ -41,15 +45,17 @@
 }
 
 #content {
-	width: 1060px;
+	width: 1200px;
 	min-height: 430px;
 	border: 1px solid #CDCDCD;
 	float: left;
 	margin-bottom: 5px;
 	clear: both;
+	background-color: azure;
 }
 
 #footer {
+width: 1200px;
 	height: 50px;
 	clear: both;
 	border: 1px solid #CDCDCD;
@@ -73,10 +79,10 @@
 	%>
 	<div id="main">
 		<div id="head">
-			<img src="images/banner.jpg" width="1057px" height="200px" />
+				<img src="images/bgr1.png" width="1200px" height="200px" />
 		</div>
 		<div id="head-link">
-			<div id='menungang'>
+			<div id='menungang' style="background-color:  #0093E9; background-image:linear-gradient(160deg, #0081cc 10%, #80D0C7 100%);width: 1200px;">
 				<ul>
 					<li class='last'><a href="index.jsp"><span>Trang
 								chủ</span></a></li>
