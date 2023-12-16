@@ -81,7 +81,7 @@ java.sql.Date ngaysinh= null;
 
 		try {
 			if (err.length() == 0) {
-				User u= new User(Integer.parseInt(user_id), username, password, ngaysinh, gioitinh, email, sdt, diachi, "2");
+				User u= new User(Integer.parseInt(user_id), username, password, ngaysinh, gioitinh, email, sdt, diachi);
 				userDAO.updateUser(u);
 				url = "/index.jsp";
 			} else {

@@ -28,7 +28,6 @@ public class UserDAOImpl implements UserDAO {
 			ps.setString(6, u.getEmail());
 			ps.setString(7, u.getSdt());
 			ps.setString(8, u.getDiachi());
-			ps.setString(9, u.getRole());
 			ps.executeUpdate();
 			con.close();
 		} catch (SQLException e) {
@@ -94,7 +93,6 @@ public class UserDAOImpl implements UserDAO {
 			ps.setString(5, u.getEmail());
 			ps.setString(6, u.getSdt());
 			ps.setString(7, u.getDiachi());
-			ps.setString(8, u.getRole());
 			ps.setString(9, u.getUsername());
 			ps.executeUpdate();
 			con.close();
@@ -122,8 +120,7 @@ public class UserDAOImpl implements UserDAO {
 				String email = rs.getString("email");
 				String sdt = rs.getString("sdt");
 				String diachi = rs.getString("diachi");
-				String role = rs.getString("role");
-				u = new User(user_id, username, password, ngaysinh, gioitinh, email, sdt, diachi, role);
+				u = new User(user_id, username, password, ngaysinh, gioitinh, email, sdt, diachi);
 			}
 			con.close();
 		} catch (SQLException e) {

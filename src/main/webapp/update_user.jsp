@@ -35,9 +35,6 @@
 				<li><input type="text" class="text"
 					value="<%=u.getUsername()%>" readonly name="username"><a
 					href="#" class=" icon2 user2"></a></li>
-				Mật khẩu
-				<li><input type="password" value="" 
-					name="password"><a href="#" class=" icon2 lock2"></a></li>
 				Ngày sinh
 				<li><input type="date" value="<%=u.getNgaysinh()%>"
 					onfocus="this.value = '';"

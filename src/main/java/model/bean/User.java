@@ -11,13 +11,11 @@ public class User {
 	private String email;
 	private String sdt;
 	private String diachi;
-	private String role;
 
 	public User() {
 	}
 
-	public User(int user_id, String username, String password, java.sql.Date ngaysinh, String gioitinh, String email, String sdt, String diachi,
-			String role) {
+	public User(int user_id, String username, String password, java.sql.Date ngaysinh, String gioitinh, String email, String sdt, String diachi) {
 		this.user_id = user_id;
 		this.username = username;
 		this.password = password;
@@ -26,7 +24,6 @@ public class User {
 		this.email = email;
 		this.sdt = sdt;
 		this.diachi = diachi;
-		this.role = role;
 	}
 
 	public int getUser_id() {
@@ -93,12 +90,6 @@ public class User {
 		this.diachi = diachi;
 	}
 
-	public String getRole() {
-		return role;
-	}
 
-	public void setRole(String role) {
-		this.role = role;
-	}
 
 }

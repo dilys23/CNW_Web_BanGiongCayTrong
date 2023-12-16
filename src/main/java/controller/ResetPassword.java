@@ -58,7 +58,7 @@ public class ResetPassword extends HttpServlet {
 			if (err.length() == 0) {
 
 				User u = userDAO.getUser(username);
-				User new_user = new User(u.getUser_id(), username, "passwordreset", u.getNgaysinh(), u.getGioitinh(), u.getEmail(), u.getSdt(), u.getDiachi(), u.getRole());
+				User new_user = new User(u.getUser_id(), username, "passwordreset", u.getNgaysinh(), u.getGioitinh(), u.getEmail(), u.getSdt(), u.getDiachi());
 				userDAO.updateUser(new_user);
 				url = "/login.jsp";
 				String mess = "Kiểm tra email để nhận mật khẩu mới!";
