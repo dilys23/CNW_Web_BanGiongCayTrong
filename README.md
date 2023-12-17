@@ -1,9 +1,9 @@
-	****Triển khai chương trình****
+	**Triển khai chương trình**
            
     Chương trình được triển khai sử dụng mô hình MVC_JSPServlet.
     Vận hành trên Apache Tomcat 8.5, một máy chủ web Java Servlet/JSP nổi tiếng và mạnh mẽ, hỗ trợ việc thực thi các ứng dụng web dựa trên Java Servlet và JSP.
 
-**	**Xây dựng cơ sở dữ liệu****
+                **Xây dựng cơ sở dữ liệu**
 
 - 	Sử dụng MySQL trên Xampp để lưu trữ csdl
 - Xây dựng các bảng: 
@@ -14,6 +14,7 @@
 Hình 3. 1 Cơ sở dữ liệu
   
 
+![image](https://github.com/dilys23/CNW_Web_BanGiongCayTrong/assets/91045422/8182918e-3bbc-48dc-93ab-041f8c8faf04)
 
 
               
@@ -282,3 +283,8 @@ Hình 4. 18 Giao diện sau cập nhật User thành công.
 
 Hình 4. 19 Giao diện sau khi đăng xuất.
 
+
+* Pull code từ Branch Lenehe
+* Cài đặt Apache Tomcat 8.5
+* Cài đặt các thư viện
+* Import file SQL trong Mysql Xampp
