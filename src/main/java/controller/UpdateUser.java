@@ -67,11 +67,15 @@ java.sql.Date ngaysinh= null;
 				if (!matcherObj.matches()) {
 					err += "Email sai định dạng!";
 				}else{
-					Pattern pattenObj2 = Pattern
-							.compile("(09)\\d{8}|(01)\\d{9}");
+					Pattern pattenObj2 = Pattern.compile("\\d{10}");
+
 					Matcher matcherObj2 = pattenObj2.matcher(sdt);
+
 					if (!matcherObj2.matches()) {
-						err += "Sđt sai định dạng!";}
+
+					    err += "SĐT sai định dạng!";
+
+					}
 				}
 		}
 

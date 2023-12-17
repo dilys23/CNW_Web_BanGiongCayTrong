@@ -16,7 +16,8 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public void addUser(User u) {
 		Connection con = DBConnect.getConnecttion();
-		String sql = "insert into user value(?,?,?,?,?,?,?,?,?)";
+		String sql = "insert into user values(?,?,?,?,?,?,?,?)";
+
 		PreparedStatement ps;
 		try {
 			ps = con.prepareStatement(sql);
@@ -81,26 +82,24 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public void updateUser(User u) {
-		Connection con = DBConnect.getConnecttion();
-		String sql = "update user set user_id=?, password=?, ngaysinh=?, gioitinh=?, email=?, sdt=?, diachi=?, role=? where username=?";
-		try {
-			PreparedStatement ps = (PreparedStatement) con
-					.prepareStatement(sql);
-			ps.setInt(1, u.getUser_id());
-			ps.setString(2, u.getPassword());
-			ps.setDate(3, u.getNgaysinh());
-			ps.setString(4, u.getGioitinh());
-			ps.setString(5, u.getEmail());
-			ps.setString(6, u.getSdt());
-			ps.setString(7, u.getDiachi());
-			ps.setString(9, u.getUsername());
-			ps.executeUpdate();
-			con.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		
+	    Connection con = DBConnect.getConnecttion();
+	    String sql = "update user set password=?, ngaysinh=?, gioitinh=?, email=?, sdt=?, diachi=? where username=?";
+	    try {
+	        PreparedStatement ps = con.prepareStatement(sql);
+	        ps.setString(1, u.getPassword());
+	        ps.setDate(2, u.getNgaysinh());
+	        ps.setString(3, u.getGioitinh());
+	        ps.setString(4, u.getEmail());
+	        ps.setString(5, u.getSdt());
+	        ps.setString(6, u.getDiachi());
+	        ps.setString(7, u.getUsername()); // This should be the 7th parameter
+	        ps.executeUpdate();
+	        con.close();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
 	}
+
 
 	@Override
 	public User getUser(String name) {
